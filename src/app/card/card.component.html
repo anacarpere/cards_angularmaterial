@@ -1,0 +1,15 @@
+<div class="cards">
+<mat-card [style]="'background-color:' + bg +'; height:' + altura+ '; color:' +cor+';'">
+    
+    <mat-card-header>
+        <mat-card-subtitle class="titulo">{{titulo}}</mat-card-subtitle>
+        <mat-card-title class="preco"><p>R$</p>{{cmpPreco}}</mat-card-title>
+    </mat-card-header>     
+        <mat-list-item>{{cmpStorage}}</mat-list-item>
+        <mat-list-item>{{cmpUser}}</mat-list-item> 
+        <mat-list-item>{{cmpSend}}</mat-list-item>
+        <mat-card-actions>
+        <button mat-stroked-button color="Primary" (click)="emitirEventoPersonalizado()">Learn More</button>
+        </mat-card-actions>
+</mat-card>
+</div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project_cards';
+  
+  constructor(
+    private _snackBar: MatSnackBar) {}
+  
+    mostrarSnackBar(): void {
+      this._snackBar.open('Pacote Comprado', 'Fechar')
+    }
 }
